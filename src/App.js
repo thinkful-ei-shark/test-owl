@@ -1,11 +1,16 @@
 import React from 'react';
+import Views from './components/Views';
+import Sidebar from './components/Sidebar';
+import ControlBar from './components/ControlBar';
 
 const App = ({ store }) => {
   console.log(store);
   return (
-    <div className='app'>
-      <h1>Starter</h1>
-    </div>
+    <main class='session'>
+      <Sidebar></Sidebar>
+      <Views></Views>
+      <ControlBar></ControlBar>
+    </main>
   );
 };
 
