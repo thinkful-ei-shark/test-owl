@@ -16,13 +16,12 @@ const SidebarTabs = ({ handleTabChange, currentTab }) => {
           <button type='button' onClick={() => handleChatOnClick('chat')}>
             Chat
           </button>
-          <button
+          <ActiveButton
             type='button'
-            className='btn-active'
             onClick={() => handleChatOnClick('participants')}
           >
             Participants
-          </button>
+          </ActiveButton>
           <button type='button'>
             <img src={settingsIcon} alt='button' />
           </button>
@@ -38,13 +37,9 @@ const SidebarTabs = ({ handleTabChange, currentTab }) => {
 
     return (
       <>
-        <button
-          type='button'
-          className='btn-active'
-          onClick={() => handleChatOnClick('chat')}
-        >
+        <ActiveButton type='button' onClick={() => handleChatOnClick('chat')}>
           Chat
-        </button>
+        </ActiveButton>
         <button type='button' onClick={() => handleChatOnClick('participants')}>
           Participants
         </button>
@@ -63,6 +58,11 @@ const SidebarTabs = ({ handleTabChange, currentTab }) => {
 
   return <Tabs>{renderTabs()}</Tabs>;
 };
+
+const ActiveButton = styled.button`
+  color: #6799ff !important;
+  border-bottom: 0.1px solid #6799ff !important;
+`;
 
 const Tabs = styled.div`
   background-color: gray;

@@ -19,22 +19,6 @@ body {
   font-size: 1.6rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 330px calc(100% - 330px) 100%;
-  grid-template-rows: calc(100% - 75px);
-  grid-template-areas:
-    'sidebar views'
-    'sidebar views'
-    'controlBar controlBar';
-  height: 100vh;
-}
-
 .sidebar-container {
   grid-area: sidebar;
 }
@@ -46,15 +30,4 @@ main {
 .control-bar-container {
   grid-area: controlBar;
   background-color: red;
-}
-
-.participants-list {
-  padding: 1.6rem;
-  height: calc(100% - 48px);
-  overflow-y: scroll;
-}
-
-.btn-active {
-  color: #6799ff !important;
-  border-bottom: 0.1px solid #6799ff !important;
 }

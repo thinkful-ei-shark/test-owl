@@ -32,7 +32,7 @@ const renderStatus = (inSession, onStage) => {
 
 const Participants = ({ participants }) => {
   return (
-    <div className='participants-list'>
+    <ParticipantsList>
       {participants.map((p) => (
         <Participant key={p.id}>
           <img src={p.avatar} alt={p.name} />
@@ -42,9 +42,15 @@ const Participants = ({ participants }) => {
           </div>
         </Participant>
       ))}
-    </div>
+    </ParticipantsList>
   );
 };
+
+const ParticipantsList = styled.div`
+  padding: 1.6rem;
+  height: calc(100% - 48px);
+  overflow-y: scroll;
+`;
 
 const Participant = styled.div`
   width: 292px;

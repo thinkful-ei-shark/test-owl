@@ -9,18 +9,19 @@ export default {
       onStage: true,
     },
     {
+      id: 5,
+      name: 'Ashla Attwool',
+      avatar:
+        'https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1',
+      inSession: true,
+      onStage: true,
+    },
+    {
       id: 2,
       name: 'Caty Flucker',
       avatar:
         'https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1',
       inSession: true,
-      onStage: false,
-    },
-    {
-      id: 3,
-      name: 'Axe Kubicka',
-      avatar: 'https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1',
-      inSession: false,
       onStage: false,
     },
     {
@@ -32,12 +33,11 @@ export default {
       onStage: false,
     },
     {
-      id: 5,
-      name: 'Ashla Attwool',
-      avatar:
-        'https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1',
-      inSession: true,
-      onStage: true,
+      id: 3,
+      name: 'Axe Kubicka',
+      avatar: 'https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1',
+      inSession: false,
+      onStage: false,
     },
   ],
   chatEvents: [
