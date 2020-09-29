@@ -37,15 +37,24 @@ main {
 
 .sidebar-container {
   grid-area: sidebar;
-  background-color: yellow;
 }
 
 .views-container {
   grid-area: views;
-  background-color: green;
 }
 
 .control-bar-container {
   grid-area: controlBar;
   background-color: red;
+}
+
+.participants-list {
+  padding: 1.6rem;
+  height: calc(100% - 48px);
+  overflow-y: scroll;
+}
+
+.btn-active {
+  color: #6799ff !important;
+  border-bottom: 0.1px solid #6799ff !important;
 }
