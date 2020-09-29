@@ -3,12 +3,13 @@ import Views from './components/Views';
 import Sidebar from './components/Sidebar';
 import ControlBar from './components/ControlBar';
 
-const App = ({ store }) => {
-  console.log(store);
+const App = (props) => {
+  //console.log(props.store.participants);
+  const participants = props.store.participants;
   return (
-    <main class='session'>
+    <main className="session">
       <Sidebar></Sidebar>
-      <Views></Views>
+      <Views participants={participants}></Views>
       <ControlBar></ControlBar>
     </main>
   );
