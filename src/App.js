@@ -11,7 +11,7 @@ const App = ({ store }) => {
         participants={store.participants}
         chatEvents={store.chatEvents}
       ></Sidebar>
-      <Views></Views>
+      <Views participants={store.participants}></Views>
       <ControlBar></ControlBar>
     </Main>
   );
