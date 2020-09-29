@@ -1,27 +1,44 @@
 import React from 'react';
-import './Views.js'; 
-
-
-
+import './Views.css'; 
 
 const Views = (props) => {
-  console.log(props.participants);
-  console.log(props.participants[0].avatar);
+
+  const hostView = (
+    <div className="owner-view">
+      <h3>Optimus Prime</h3>
+      <img
+        src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+        alt="avatar images"
+        className="portraits"
+      />
+    </div>
+  );
   const viewsArray = props.participants.map((index) => {
-    return (<li key={index.id}>
-    <h3>{index.name}</h3>
-    <img src={index.avatar} alt="avatar images" />
-    </li>
-)
+    return (
+      index.onStage && (
+        <div className="host-views" key={index.id}>
+          <ul>
+            <li>
+              <h3>{index.name}</h3>
+              <img
+                className="portraits"
+                src={index.avatar}
+                alt="avatar images"
+              />
+            </li>
+          </ul>
+        </div>
+      )
+    );
   });
   console.log(viewsArray);
   return (
-    <div className='views-container'>
-      <div className='host-views'> 
-        <ul>{viewsArray}</ul>
-      </div>
+    <div className="views-container">
+      {viewsArray}
     </div>
   );
 };
 
 export default Views;
+
+      

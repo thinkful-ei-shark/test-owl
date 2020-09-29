@@ -1,35 +1,47 @@
 
 
 .views-container {
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 0;
+    text-align: center;
     width: 100%;
-    overflow: hidden;
     height: 100%;
     background: #404853;
 
 
 }
 
+h3 {
+    background: rgba(127,255,212, .6);
+    font-family: helvetica;
+    border-radius: 20%;
+}
 
 .host-views {
-
-border-bottom-left-radius: 3px;
-border-bottom-right-radius: 3px;
-position: absolute;
-top: 0;
-left: 50%;
-height: 55px;
-transform: translateX(-50%);
-padding: 8px 20px;
-overflow: visible;
-background: rgba(30,40,53,.65);
-
+flex: 1;
+align-content: center;
+align-items: center;
+display: flex;
+justify-content: center;
 }
 
 li {
     list-style: none;
 }
 
-img {
+.portraits{
     border-radius: 100%;
+    height: auto;
+    width: auto;
+    border-style: solid;
+}
+
+.owner-view {
+    bottom: 0px;
+}
+
+.owner-view img{
+border-radius: 100%;
 }
