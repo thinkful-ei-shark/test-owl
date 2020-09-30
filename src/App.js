@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Views from './components/Views';
 import Sidebar from './components/Sidebar/Sidebar';
-import ControlBar from './components/ControlBar';
+import ControlBar from './components/ControlBar/ControlBar';
 
 const App = ({ store }) => {
   return (
